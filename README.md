@@ -1,5 +1,5 @@
 # jsportsdb
-JVM based TheSportsDB Http API client
+JVM based TheSportsDB Http API client https://www.thesportsdb.com/api.php
 
 Java example
 ```java
