@@ -1,8 +1,8 @@
 package org.biacode.jsportsdb.list.impl
 
+import org.biacode.jsportsdb.AbstractJsportsClient
 import org.biacode.jsportsdb.list.ListTeamsClient
 import org.biacode.jsportsdb.model.ResultResponse
-import org.biacode.jsportsdb.search.impl.AbstractJsportsClient
 
 /**
  * Created by Arthur Asatryan.

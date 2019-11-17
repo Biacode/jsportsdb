@@ -1,4 +1,4 @@
-package org.biacode.jsportsdb.search.impl
+package org.biacode.jsportsdb
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import okhttp3.OkHttpClient

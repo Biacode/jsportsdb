@@ -1,5 +1,6 @@
 package org.biacode.jsportsdb.search.impl
 
+import org.biacode.jsportsdb.AbstractJsportsClient
 import org.biacode.jsportsdb.model.ResultResponse
 import org.biacode.jsportsdb.search.SearchTeamClient
 
