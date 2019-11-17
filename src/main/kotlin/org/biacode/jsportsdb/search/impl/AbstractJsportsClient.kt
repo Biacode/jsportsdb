@@ -26,5 +26,5 @@ abstract class AbstractJsportsClient(
                 .build()
     }
 
-    protected fun urlString(): String = "https://www.thesportsdb.com/api/v1/json/$apiKey"
+    private fun urlString(): String = "https://www.thesportsdb.com/api/v1/json/$apiKey"
 }
