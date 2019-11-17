@@ -6,7 +6,9 @@ Java example
 public class JavaDemoApp {
     public static void main(String[] args) {
         final SearchTeamClientImpl searchTeamClient = new SearchTeamClientImpl();
-        System.out.println(searchTeamClient.byShortCode("Ars").asMap());
+        final ResultResponse resultResponse = searchTeamClient.byShortCode("Ars");
+        System.out.println(resultResponse.asMap());
+        System.out.println(resultResponse.asString());
     }
 }
 ```
