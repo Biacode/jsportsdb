@@ -6,9 +6,14 @@ Java example
 public class JavaDemoApp {
     public static void main(String[] args) {
         final SearchTeamClientImpl searchTeamClient = new SearchTeamClientImpl();
-        final ResultResponse resultResponse = searchTeamClient.byShortCode("Ars");
-        System.out.println(resultResponse.asMap());
-        System.out.println(resultResponse.asString());
+        final ResultResponse searchTeamResult = searchTeamClient.byShortCode("Ars");
+        System.out.println(searchTeamResult.asMap());
+        System.out.println(searchTeamResult.asString());
+
+        final ListSportsClient listSportsClient = new ListSportsClientImpl();
+        final ResultResponse listSportsResult = listSportsClient.all();
+        System.out.println(listSportsResult.asMap());
+        System.out.println(listSportsResult.asString());
     }
 }
 ```
@@ -18,9 +23,13 @@ Kotlin example
 object KotlinDemoApp {
     @JvmStatic
     fun main(args: Array<String>) {
-        val resultResponse = SearchTeamClientImpl().byShortCode("Arsenal")
-        println(resultResponse.asString())
-        println(resultResponse.asMap())
+        val searchTeamResult = SearchTeamClientImpl().byShortCode("Arsenal")
+        println(searchTeamResult.asString())
+        println(searchTeamResult.asMap())
+
+        val listSportsResult = ListSportsClientImpl().all()
+        println(listSportsResult.asString())
+        println(listSportsResult.asMap())
     }
 }
 ```

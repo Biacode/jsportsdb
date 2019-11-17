@@ -1,5 +1,6 @@
 package org.biacode.jsportsdb
 
+import org.biacode.jsportsdb.list.impl.ListSportsClientImpl
 import org.biacode.jsportsdb.search.impl.SearchTeamClientImpl
 
 
@@ -11,8 +12,12 @@ import org.biacode.jsportsdb.search.impl.SearchTeamClientImpl
 object KotlinDemoApp {
     @JvmStatic
     fun main(args: Array<String>) {
-        val resultResponse = SearchTeamClientImpl().byShortCode("Arsenal")
-        println(resultResponse.asString())
-        println(resultResponse.asMap())
+        val searchTeamResult = SearchTeamClientImpl().byShortCode("Arsenal")
+        println(searchTeamResult.asString())
+        println(searchTeamResult.asMap())
+
+        val listSportsResult = ListSportsClientImpl().all()
+        println(listSportsResult.asString())
+        println(listSportsResult.asMap())
     }
 }
