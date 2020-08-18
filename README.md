@@ -5,7 +5,7 @@ Java example
 ```java
 public class JavaDemoApp {
     public static void main(String[] args) {
-        final SearchTeamClientImpl searchTeamClient = new SearchTeamClientImpl();
+        final SearchTeamClient searchTeamClient = new SearchTeamClientImpl();
         final ResultResponse searchTeamResult = searchTeamClient.byShortCode("Ars");
         System.out.println(searchTeamResult.asMap());
         System.out.println(searchTeamResult.asString());
